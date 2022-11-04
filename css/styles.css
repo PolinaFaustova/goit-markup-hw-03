@@ -14,6 +14,7 @@ body {
   color: var(--brand-color);
   font-family: 'Roboto', sans-serif;
 }
+
 /* Утіліти */
 /* видалила лапки та підкреслювання */
 ul {
@@ -24,7 +25,9 @@ ul {
 a {
   text-decoration: none;
 }
-
+img {
+  display: block;
+}
 /* Сховати заголовок */
 .visually-hidden {
   position: absolute;
@@ -41,22 +44,18 @@ a {
 /* хедер */
 .page-header {
   background-color: var(--total-white);
+  border: 1px solid #ECECEC;
 }
-
-/* це для секциї якості в один рядок вийшло*/
-.popytka{
+.page-header .container {
   display: flex;
+  align-items: center;
 }
 
-
+/* site-nav */
 .site-nav-list .item:not(:last-child) {
   margin-right: 50px;
 }
 
-/* site-nav */
-.site-nav-list{
-
-}
 .site-nav-list .link,
 .site-nav-list .link-current {
   color: var(--brand-color);
@@ -64,12 +63,20 @@ a {
   padding-bottom: 32px;
   display: block;
 }
+
 .site-nav-list,
 .contacts-header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+}
+.site-nav-list{
+  margin-left: 93px;
+}
+.contacts-header {
+  margin-left: auto;
 }
 
 .site-nav-list .link-current,
@@ -97,8 +104,6 @@ a {
   color: var(--blue-color);
 }
 
-.contacts-header {
-}
 .contacts-header .item + .item {
   margin-left: 50px;
 }
@@ -110,24 +115,18 @@ a {
   color: var(--blue-color);
 }
 
-/* Контейнер намагаюсь сюди дісплей додати для хедера
-*/
+/* Контейнер*/
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
 }
-
-
-.popytka{
-  display: flex;
-}
-
 /* Cекції налаштування */
 .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* секція герой */
@@ -139,6 +138,11 @@ a {
 .hero h1 {
   margin-top: 0;
   margin-bottom: 30px;
+  /* padding-top: 200px;
+  padding-right: 452px;
+  padding-bottom: 280px;
+  padding-left: 452px;
+   */
 
   font-weight: 900;
   font-size: 44px;
@@ -211,17 +215,25 @@ a {
   width: 73px;
 }
 /* Секція якості quality */
-.section-quality {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+/* це для секциї якості flex в один рядок вийшло*/
+.quality-item {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
 }
+
 .quality-h {
+  flex-basis: calc((100% - 90px) / 4);
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .quality-p {
+  flex-basis: calc((100% - 90px) / 4);
+
   font-size: 14px;
   line-height: 1.71;
 
@@ -230,7 +242,13 @@ a {
 }
 
 /* Секція чим ми займаємося doing */
-.section-doing {
+.doing-item {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.doing-item li {
+  flex-basis: calc((100% - 90px) / 4);
 }
 .title {
   font-size: 36px;
@@ -240,6 +258,9 @@ a {
 }
 
 /* Наша команда team */
+.team-item{
+  display: flex; 
+}
 .section-team {
   background-color: var(--background-btn);
 }
@@ -296,10 +317,29 @@ a {
 }
 
 /* Портфоліо */
-.section-portfolio {
+.portfolio-btn{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
-.port {
+.portfolio-kards{
+  display: flex;
+  flex-wrap: wrap;
 }
+.portfolio-kards li{
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-kards li:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-kards li:nth-last-child(-n+3){
+  margin-bottom: 0;
+}
+
+
+
 .port-name {
   font-size: 18px;
   line-height: 2;
