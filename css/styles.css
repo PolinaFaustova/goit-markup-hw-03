@@ -43,14 +43,12 @@ a {
   background-color: var(--total-white);
 }
 
-
-/* НЕ виХОДИТЬ ніяк поставити  все в один рядок 
-
-це для секциї якості*/
+/* це для секциї якості в один рядок вийшло*/
 .popytka{
   display: flex;
 }
-/* НЕ !!!!! */
+
+
 .site-nav-list .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -112,13 +110,15 @@ a {
   color: var(--blue-color);
 }
 
-/* Контейнер */
+/* Контейнер намагаюсь сюди дісплей додати для хедера
+*/
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
 }
 
 
