@@ -27,6 +27,8 @@ a {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 h1,
 h2,
@@ -283,9 +285,7 @@ p {
 }
 .item-name-position {
   padding-top: 30px;
-  padding-right: 70px;
   padding-bottom: 30px;
-  padding-left: 70px;
 }
 .section-team {
   background-color: var(--background-btn);
@@ -319,6 +319,8 @@ p {
   color: var(--blue-color);
 }
 .adress {
+  margin-bottom: 9px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -327,6 +329,8 @@ p {
   color: var(--total-white);
 }
 .footer-contacts {
+  margin-bottom: 9px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
