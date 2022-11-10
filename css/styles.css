@@ -240,6 +240,24 @@ p {
 .quality-h-p {
   flex-basis: calc((100%-90px) / 4);
 }
+.quality-h-p::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: #F5F4FA;;
+}
+.icon-uvaga::before {
+background-image: url();
+}
+.icon-punktualnist::before {
+background-image: url();
+}
+.icon-plan::before {
+background-image: url();
+}
+.icon-tehno::before {
+background-image: url();
+}
 .quality-h {
   margin-bottom: 10px;
 
